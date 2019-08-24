@@ -5,10 +5,10 @@
 
 ### Usage
 
-## Install independently
+#### Install independently
 `ansible-pull -U https://github.com/micalexander/ansible-role-dmux.git -K`
 
-## Include in playbook
+#### Include in playbook
 ```
 roles:
  - micalexander.dmux
