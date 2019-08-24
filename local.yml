@@ -2,16 +2,7 @@
 - name: Setup hosts
   hosts: localhost
 
-  tasks:
-    - add_host: name=127.0.0.1
-                group=localhost
-                
 - name: Install neovim
-  hosts: localhost
-
-  tasks:
-    - name: Install requirements
-      raw: ansible-galaxy install -r {{ playbook_dir }}/requirements.yml -f
-      
-    - include_role: 
-        name: micalexander.dmux
+  roles:
+    - role:
+      name: micalexander.dmux
