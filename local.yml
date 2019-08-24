@@ -1,6 +1,6 @@
 ---
 - name: Setup hosts
-
+  hosts: all
   tasks:
     - add_host: name=127.0.0.1
                 group=localhost
