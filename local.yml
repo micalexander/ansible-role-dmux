@@ -4,5 +4,4 @@
 
 - name: Install neovim
   roles:
-    - role:
-      name: micalexander.dmux
+    - micalexander.dmux
