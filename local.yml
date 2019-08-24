@@ -1,7 +1,6 @@
 ---
 - name: Setup hosts
   hosts: localhost
-
   pre_tasks:
     - name: add 127.0.0.1 to localhost group
       add_host: 
