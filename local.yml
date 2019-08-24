@@ -1,6 +1,5 @@
 ---
 - name: Setup hosts
-  hosts: localhost
 
   tasks:
     - add_host: name=127.0.0.1
