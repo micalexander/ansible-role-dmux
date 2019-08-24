@@ -1,0 +1,7 @@
+---
+- name: Install list of packages
+  apt:
+    state: present
+    update_cache: yes
+    name: ['vifm', 'tmux']
+

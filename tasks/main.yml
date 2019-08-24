@@ -1,0 +1,16 @@
+---
+# tasks install dmux
+- name: Download foo.conf
+  become: true
+  become_user: root
+  get_url:
+    url: https://raw.githubusercontent.com/micalexander/dmux/master/dmux
+    dest: /usr/local/bin
+    mode: '0644'
+
+- import_tasks: brew-install.yml
+  when: ansible_distribution == 'MacOSX'
+
+- import_tasks: apt-install.yml
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
