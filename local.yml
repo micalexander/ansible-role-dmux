@@ -6,7 +6,7 @@
       add_host: 
         name: 127.0.0.1
         group: localhost             
-- name: Install neovim
+- name: Install dmux
   hosts: localhost
   tasks:
     - name: Install requirements
