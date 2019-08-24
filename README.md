@@ -1,4 +1,4 @@
-# ansible-pull-neovim
+# ansible-role-dmux
 
 ### Dependencies
 - ansible
