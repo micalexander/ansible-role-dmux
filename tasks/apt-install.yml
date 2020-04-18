@@ -3,5 +3,5 @@
   apt:
     state: present
     update_cache: yes
-    name: ['vifm', 'tmux']
+    name: ['vifm', 'tmux', 'fzf', 'fd-find']
 
