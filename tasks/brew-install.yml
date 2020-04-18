@@ -2,4 +2,4 @@
 - name: Install list of packages
   homebrew:
     state: present
-    name: ['vifm', 'tmux', 'fzf', 'fd-find']
+    name: ['vifm', 'tmux', 'fzf', 'fd']
